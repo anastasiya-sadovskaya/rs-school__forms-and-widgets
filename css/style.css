@@ -1,0 +1,757 @@
+@font-face {
+    font-family: 'GothamSSm Book';
+    src: url(../fonts/GothamSSm-Book.otf);
+}
+
+@font-face {
+    font-family: 'GothamSSm Light';
+    src: url(../fonts/GothamSSm-Light.otf);
+}
+
+@font-face {
+    font-family: 'GothamSSm Medium';
+    src: url(../fonts/GothamSSm-Medium.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'GothamSSm Book';
+    font-size:14px;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    padding: 20px;
+    background-color: #d8d8d8;
+}
+
+ul, ul li{
+    list-style: none;
+}
+
+article{
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(0,0,0,0.44);
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.destination{
+    height: 340px;
+}
+
+.destination .tabs{
+    width: 70px;
+    float: left;
+}
+
+.destination .tabs, .destination .tabs ul{
+    height: 100%;
+}
+
+.destination .tabs li{
+    position: relative;
+    width: 70px;
+    height: calc(100% / 3);
+    background-color: #404a58;
+    border-bottom: solid 1px #242931;
+    cursor: pointer;
+}
+
+.destination .tabs li:last-child{
+    border: none;
+}
+
+.destination .tabs li:hover{
+    background-color: #fb6362;
+    
+}
+
+.icon {
+    background: url('../images/sprites.png') no-repeat;
+    display: inline-block;
+}
+
+.destination .tabs .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view{
+    width: 29px;
+    height: 20px;
+    background-position: -370px -4px;
+}
+
+.point{
+    width: 20px;
+    height: 28px;
+    background-position: -237px -4px;
+}
+
+.favourite{
+    width: 23px;
+    height: 22px;
+    background-position: -339px -4px;
+}
+
+.destination section{
+    position: relative;
+    width:357px;
+    height: 100%;
+    float: left;
+    padding: 26px 34px;
+}
+
+.destination p, .destination a{
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+.destination p{
+    color: #999;
+    font-family: 'GothamSSm Light';
+}
+
+.destination p span, .destination h3{
+    color: #4d4d4d;
+}
+
+.destination h3{
+    /*font-family: 'GothamSSm Medium';*/
+    font-size: 21px;
+    letter-spacing: -.03em;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.reviews{
+    margin-bottom: 30px;
+}
+
+.description{
+    margin-bottom: 14px;
+    line-height: 24px;
+}
+
+.read-more{
+    color: #fb6362;
+}
+
+.read-more:hover{
+    color: #ef4e4d;
+}
+
+.destination .rectangle{
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: solid 22px transparent;
+    border-left-color: #fff;
+}
+
+.destination figure{
+    position: relative;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.destination figure img{
+    margin-top: -21px;
+}
+
+.social{
+    position: absolute;
+    bottom: 20px;
+    right: 29px;
+    color: #fff;
+    font-size: 17px;
+    height: 24px;
+}
+
+.social .icon{
+    height: 24px;
+    display: inline-block;
+}
+
+.social > *{
+    float: left;
+    height: 100%;
+    line-height: 24px;
+    margin-right: 6px;
+}
+
+.social > *:last-child{
+    margin:0;
+}
+
+.social span {
+    margin-right: 18px;
+}
+
+.comments{
+    width: 27px;
+    height: 24px;
+    background-position: -123px -4px;
+}
+
+.likes{
+    width: 27px;
+    height: 24px;
+    background-position: -184px -4px;
+}
+
+.calendar tr {
+    height: 36px;
+}
+
+.calendar .main{
+    /*padding: 12px 25px;*/
+    padding: 25px;
+    padding-top: 12px
+}
+
+.calendar .header{
+    background-color: #404a58;
+    color: #fff;
+    font-size: 17px;
+    /*padding: 20px 38px;*/
+    height: 62px;
+    text-align: center;
+}
+
+.calendar .header span {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.prev{
+    width: 8px;
+    height: 13px;
+    background-position: -4px -4px;
+}
+
+.next{
+    width: 8px;
+    height: 13px;
+    background-position: -219px -4px;
+}
+
+.calendar table{
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.calendar table th{
+    font-family: 'GothamSSm Medium'
+}
+
+.calendar table td{
+    width: 37px;
+    height: 37px
+}
+
+.controller{
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.controller:hover{
+    background-color: #2f3640
+}
+
+.controller-prev{
+    float: left;
+    padding-left: 38px;
+    text-align: left;
+}
+
+.controller-next{
+    float: right;
+    padding-right: 38px;
+    text-align: right;
+}
+
+.prev-month, .next-month{
+    color: #c5c5c5;
+}
+
+.active{
+    color: #fff;
+    background-color: #fb6362;
+    border-radius: 50%;
+}
+
+.holiday{
+    color: #fb6362;
+}
+
+button, input[type='submit']{
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.calendar button, .booking button{
+    
+}
+
+.submit{
+    background: #fb6362;
+    width: 100%;
+    height: 58px;
+    color: #fff;
+    box-shadow: 0 3px 12px -4px rgba(0, 0, 0, 0.55);
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.submit:hover{
+    background-color: #ef4e4d;
+}
+
+.booking{
+    width: 346px;
+}
+
+.booking figure{
+    position: relative;
+}
+
+.booking figure img{
+    margin-left: -24px;
+}
+
+.booking figcaption{
+    position: absolute;
+    bottom: 19px;
+    left: 23px;
+    color: #fff;
+    letter-spacing: -.02em;
+}
+
+.booking figcaption h3{
+    font-size: 25px;
+    /* margin-bottom: 4px; */
+    /* letter-spacing: -.02em; */
+}
+
+.point-little{
+    width: 14px;
+    height: 20px;
+    background-position: -265px -4px;
+}
+
+.booking figcaption div{
+    float: left;
+}
+
+.booking figcaption p{
+    float: left;
+    line-height: 20px;
+    margin-left: 5px;
+    font-size: 14px;
+    /* letter-spacing: -.02em; */
+}
+
+.booking form{
+    padding: 23px;
+    padding-top: 2px;
+} 
+
+.booking label{
+    display: block;
+    margin-bottom: 19px;
+    color: #666;
+    margin-top: 15px;
+    line-height: 26px;
+}
+
+.custom-input{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-family: 'GothamSSm Light';
+}
+
+.booking .custom-input{
+    max-width: 297px;
+    margin-top: 3px;
+}
+
+input[type='text'], textarea{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    color: #999;
+    padding-left: 14px;
+    border-radius: 2px;
+    border: solid 1px #e5e5e5;
+    border-width: 0 1px;
+    box-shadow: inset 0 13px 18px -13px rgba(0,0,0,.25);
+}
+
+button.btn-inside-input{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    width: 37px;
+    height: 37px;
+}
+
+.booking .btn-inside-input{
+    background-color: #414b59;
+}
+
+.booking .btn-inside-input:hover{
+    background-color: #2f3640;
+}
+
+.booking .label-for-checkbox {
+    margin-bottom: 4px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.calendar-icon{
+    width: 18px;
+    height: 18px;
+    background-position: -97px -4px;
+}
+
+/*.booking figcaption p:after{
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+input[type = 'checkbox'] {
+    display: none;
+}
+ 
+.custom-checkbox {
+    position: relative;
+    width: 22px;
+    height: 23px;
+    background-color: #f4f4f4;
+    box-shadow: inset 0 13px 18px -13px rgba(0,0,0,.25);
+    margin-right: 7px;
+    border-radius: 2px;
+}
+ 
+.custom-checkbox,
+.span[role='label'] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type = 'checkbox']:checked + .custom-checkbox:before {
+    content: "";            
+    display: block;         
+    position: absolute;   
+    top: 5px;
+    right: 3px;
+    bottom: 4px;
+    left: 2px;
+    background: url('../images/sprites.png') no-repeat;
+    background-position: -158px -4px;
+}
+
+/*.booking button > *{
+    float: left;
+}*/
+
+.select input{
+    color: #414b59;
+}
+
+.select-button{
+    width: 12px;
+    height: 8px;
+    background-position: -287px -4px;
+}
+
+.booking .row{
+    float: left;
+    width: calc((100%/2) - 10px);
+    margin-right: 20px;
+    max-width: calc((297px/2) - 10px);
+}
+
+.booking .row:last-of-type {
+    margin-right: 0px;
+}
+
+
+.center{
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: -12px;
+}
+
+.center > *{
+    float: left;
+}
+
+.center *:last-child:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.search{
+    width: 22px;
+    height: 23px;
+    background-position: -307px -4px;
+}
+
+.center span{
+    line-height: 23px;
+    margin-left: 13px;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.email{
+    width: 380px;
+    padding: 25px;
+}
+
+.email {
+
+}
+
+.send-to{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #404a58;
+    height: 37px;
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 9px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.send-to span{
+    line-height: 37px;
+    font-family: 'GothamSSm Light';
+    margin-right: 9px;
+}
+
+.close{
+    width: 10px;
+    height: 9px;
+    background-position: -22px -4px;
+}
+
+.add{
+    width: 16px;
+    height: 16px;
+    background-position: -40px -4px;
+}
+
+.affix{
+    width: 23px;
+    height: 20px;
+    background-position: -66px -4px;
+}
+
+.email .btn-inside-input{
+    background-color: transparent;
+}
+
+.email .btn-inside-input:hover{
+    background-color: #414b59;
+}
+
+.email .custom-input{
+    margin-bottom: 24px;
+}
+
+.email input, .email textarea{
+    padding-left: 10px;
+}
+
+textarea{
+    padding-top: 14px;
+    height: 225px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #999;
+} 
+input::-moz-placeholder, textarea::-moz-placeholder{
+    color: #999;
+}
+
+.email .submit{
+    width: auto;
+    padding: 0 41px;
+    float: right;
+    height: 48px;
+}
+ul{
+  list-style: none;
+}
+
+.graph{
+    padding: 0 42px 40px 42px ;
+    padding-top: 0;
+    color: #666;
+}
+
+.graph *{
+    font-size: 12px;
+    position: relative;
+}
+
+.scale{
+    position: relative;
+}
+
+.dividing li{
+    width: 100%;
+    position: relative;
+    height: 70px;
+    border-bottom: solid 1px #eaeaea;
+}
+
+.dividing li span{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+.week-days, .columns{
+    margin-left: 63px;
+}
+
+.week-days li, .columns li{
+    width: 55px;
+    margin-right: 35px;
+    padding-top: 8px;
+}
+
+ .columns li{
+     padding: 0;
+     height: 100%
+ }
+
+.week-days li,.columns li{
+    float: left;
+    text-align: center;
+}
+
+.columns{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+}
+
+.columns li{
+    position: relative;
+}
+
+.column{
+    
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+#item1{
+    height: 49px;    
+}
+
+#item2{
+    height: 62px;
+}
+
+#item3{
+    height: 119px;
+}
+
+#item4{
+    height: 158px;
+}
+
+#item5{
+    height: 129px;
+}
+
+#item6{
+    height: 169px;
+}
+
+#item7{
+    height: 143px;
+}
+
+.flag{
+    position: absolute;
+    display: none;
+    top: -45px;
+}
+
+.columns li:hover .flag{
+    display: block;
+}
+
+.flag-body{
+    padding: 7px 21px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #404a58;
+}
+
+.flag .rectangle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: solid 7px transparent;
+    border-top-color: #404a58
+}
+
+.column-inner{
+    height: 100%;
+    background-color: #fb6362;
+    animation: up 2s;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+@keyframes up{
+    0%{height: 0}
+    100%{height: 100%}
+}

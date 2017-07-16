@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <article class='graph'>
-        <h2 tabindex='0' class='wcag-hidden'>Graph widget</h2>
+    <section aria-label="Graph widget" class='graph'>
+        <h2 class='wcag-hidden'>Graph widget</h2>
         <div class='scale'>
             <ul aria-hidden='true' class='dividing'>
                 <li><span>40</span></li>
@@ -21,9 +21,10 @@
             </ul>
             <ul class='columns'>
                 <li>
-                    <div tabindex='0' id='item1' class='column'>
-                        <span class='wcag-hidden'>Monday 17</span>
-                        <div class='column-inner'></div>
+                    <div id='item1' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Monday 17</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>17</div>
                             <div class='rectangle'></div>
@@ -31,9 +32,10 @@
                     </div>
                 </li>
                 <li>
-                    <div tabindex='0' id='item2' class='column'>
-                        <span class='wcag-hidden'>Tuesday 19</span>
-                        <div class='column-inner'></div>
+                    <div id='item2' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Tuesday 19</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>19</div>
                             <div class='rectangle'></div>
@@ -41,9 +43,10 @@
                     </div>
                 </li>
                 <li>
-                    <div tabindex='0' id='item3' class='column'>
-                        <span class='wcag-hidden'>Wednesday 27</span>
-                        <div class='column-inner'></div>
+                    <div id='item3' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Wednesday 27</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>27</div>
                             <div class='rectangle'></div>
@@ -51,9 +54,10 @@
                     </div>
                 </li>
                 <li>
-                    <div tabindex='0' id='item4' class='column'>
-                        <span class='wcag-hidden'>Thursday 33</span>
-                        <div class='column-inner'></div>
+                    <div id='item4' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Thursday 33</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>33</div>
                             <div class='rectangle'></div>
@@ -61,9 +65,10 @@
                     </div>
                 </li>
                 <li>
-                    <div tabindex='0' id='item5' class='column'>
-                        <span class='wcag-hidden'>Friday 28</span>
-                        <div class='column-inner'></div>
+                    <div id='item5' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Friday 28</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>28</div>
                             <div class='rectangle'></div>
@@ -71,9 +76,10 @@
                     </div>
                 </li>
                 <li>
-                    <div tabindex='0' id='item6' class='column'>
-                        <span class='wcag-hidden'>Saturday 34</span>
-                        <div class='column-inner'></div>
+                    <div id='item6' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Saturday 34</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>34</div>
                             <div class='rectangle'></div>
@@ -81,9 +87,10 @@
                     </div>
                 </li>
                 <li>
-                    <div tabindex='0' id='item7' class='column'>
-                        <span class='wcag-hidden'>Sunday 31</span>
-                        <div class='column-inner'></div>
+                    <div id='item7' class='column'>
+                        <div tabindex='0' class='column-inner'>
+                            <span class='wcag-hidden'>Sunday 31</span>
+                        </div>
                         <div class='flag'>
                             <div class='flag-body'>31</div>
                             <div class='rectangle'></div>
@@ -101,23 +108,23 @@
                 <li>Sun</li>
             </ul>
         </div>
-    </article>
+    </section>
 
     <br/>
 
-    <article class='destination'>
-        <h2 tabindex='0' class='wcag-hidden'>Destination widget</h2>
+    <section class='destination' aria-label="Destination widget">
+        <h2 class='wcag-hidden'>Destination widget</h2>
         <nav class='tabs'>
             <ul>
                 <li>
                     <button class='tab'>
-                        <span class='wcag-hidden'>Information tab</span>
+                        <span class='wcag-hidden'>Information tab. Click tab and input to switch to the next tab</span>
                         <div class = 'icon view'></div>
                     </button>
                 </li>
                 <li>
                     <button class='tab'>
-                        <span class='wcag-hidden'>Show on the map tab</span>
+                        <span class='wcag-hidden'>Show on the map tab. Click tab and input to switch to the next tab</span>
                         <div class = 'icon point'></div>
                     </button>
                 </li>
@@ -138,24 +145,20 @@
         </section>
         <figure>
             <div class='rectangle'></div>
-            <img tabindex='0' src='images/destination.jpg' alt='Image of my most favourite place in the world' />
-            <figcaption tabindex='0' class='social'>
-                <div class='icon comments'>
-                    <span class='wcag-hidden'>Comments</span>
-                </div>
-                <span>752</span>
-                <div class='icon likes'>
-                    <span class='wcag-hidden'>Likes</span>
-                </div>
+            <img tabindex='0' src='images/destination.jpg' alt='Image of my most favourite place in the world.' />
+            <figcaption class='social'>
+                <div class='icon comments'></div>
+                <span>752</span><span class='wcag-hidden'>comments</span>
+                <div class='icon likes'></div>
                 <span>2709</span>
             </figcaption>
         </figure>
-    </article>
+    </section>
 
     <br />
 
-    <article class='calendar'>
-        <h2 tabindex='0' class='wcag-hidden'>Calendar widget</h2>
+    <section class='calendar' aria-label="Calendar widget" >
+        <h2 class='wcag-hidden'>Calendar widget</h2>
         <div class='header'>
             <button class='controller controller-prev'>
                 <span class='wcag-hidden'>Previous month</span>
@@ -227,12 +230,12 @@
             </table>
             <button class='submit'>Add event</button>
         </div>
-    </article>
+    </section>
 
     <br />
 
-    <article class='booking'>
-        <h2 tabindex='0' class='wcag-hidden'>Booking widget</h2>
+    <section class='booking' aria-label="Booking widget">
+        <h2 class='wcag-hidden'>Booking widget</h2>
         <figure>
             <img tabindex='0' src='images/booking.jpg' alt='Hotel Relais, Paris, France ' />
             <figcaption>
@@ -266,7 +269,7 @@
 
             <label tabindex='0' class='label-for-checkbox'>
                 <span class='wcag-hidden'>Flexible dates. Checked</span>
-                <input type='checkbox' name='checkbox-test' checked>
+                <input type='checkbox' name='checkbox-test' checked aria-checked="true">
                 <span class='custom-checkbox'></span>
                 <span role='label'>Flexible dates</span>
             </label>
@@ -297,12 +300,12 @@
                 </div>
             </button>
         </form>
-    </article>
+    </section>
 
     <br/>
 
-    <article class='email'>
-        <h2 tabindex='0' class='wcag-hidden'>Email sending widget</h2>
+    <section class='email' aria-label="Email sending widget">
+        <h2 class='wcag-hidden'>Email sending widget</h2>
         <div class='custom-input'>
             <input type='text' disabled>
             <div class='send-to'>
@@ -327,7 +330,7 @@
 
         <textarea placeholder='Message'></textarea>
         <button class='submit'>Send</button>
-    </article>
+    </section>
     <br/>
 
 

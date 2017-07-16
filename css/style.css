@@ -115,7 +115,7 @@ body > section{
     background-position: -339px -4px;
 }
 
-.destination section{
+.destination .main{
     position: relative;
     width:357px;
     height: 100%;

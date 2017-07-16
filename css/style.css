@@ -39,7 +39,7 @@ ul, ul li{
     list-style: none;
 }
 
-article{
+body > section{
     display: inline-block;
     box-shadow: 0 0 15px rgba(0,0,0,0.44);
     margin-bottom: 50px;
